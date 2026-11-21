@@ -148,7 +148,7 @@ export const App = () => {
     <div className="container py-4">
       <div className="row">
         <div className="col-lg-12 py-3 mb-5 bg-dark text-light rounded-top">
-          <h2>Számítógép konfigurátor</h2>
+          <h2 className="text-uppercase fw-bold">Számítógép konfigurátor</h2>
         </div>
       </div>
       <div className="row g-5">
@@ -197,7 +197,7 @@ export const App = () => {
               <h5 className="mb-0">Konfiguráció összesítő</h5>
               <button
                 type="button"
-                className="btn btn-sm btn-outline-light"
+                className="btn btn-sm btn-outline-danger"
                 onClick={handleReset}
               >
                 Törlés
@@ -217,7 +217,7 @@ export const App = () => {
                     </span>
                   </div>
                   <span className="fw-bold">
-                    {item ? `${item.price.toLocaleString("hu-HU")} HUF` : "—"}
+                    {item ? `${item.price.toLocaleString("hu-HU")} HUF` : "-"}
                   </span>
                 </li>
               ))}
